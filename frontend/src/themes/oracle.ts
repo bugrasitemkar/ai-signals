@@ -1,0 +1,41 @@
+import type { Theme } from './research'
+
+export const oracleTheme: Theme = {
+  name: 'oracle' as const,
+  colors: {
+    bg: 'bg-[#0a0a12]',
+    panel: 'bg-[#0d0d1a]',
+    card: 'bg-[#141428]',
+    cardBorder: 'border-[#1e1e3a]',
+    accent: 'text-indigo-400',
+    text: 'text-[#d4d4e8]',
+    textMuted: 'text-[#8b8ba8]',
+    textDim: 'text-[#4a3f6b]',
+  },
+  copy: {
+    appTitle: 'The Oracle',
+    appSubtitle: '✦ Signals Explorer ✦',
+    appTagline: 'a lens, not a prophecy',
+    send: 'Consult',
+    computing: 'Scrying...',
+    expand: 'Peer deeper',
+    learnMore: 'Learn the full incantation →',
+    summary: 'The Reading',
+    summaryDisclaimer: 'interpreted, not decreed',
+    dashboard: 'Signal Grimoire',
+    bySchool: 'By School',
+    byBehavior: 'By Omen',
+    user: 'Seeker',
+    model: () => 'Oracle Speaks',
+    queued: 'Awaiting their turn',
+    verdict: 'Verdict',
+    behindCurtain: 'Behind the curtain',
+  },
+  schools: {
+    information_theoretic: { name: 'The Probability Seers', color: 'text-indigo-400', border: 'border-indigo-400' },
+    layer_wise: { name: 'The Layer Readers', color: 'text-violet-400', border: 'border-violet-400' },
+    geometric: { name: 'The Geometry Weavers', color: 'text-pink-400', border: 'border-pink-400' },
+    behavioral: { name: 'The Consistency Watchers', color: 'text-orange-400', border: 'border-orange-400' },
+    calibration: { name: 'The Calibrators', color: 'text-teal-400', border: 'border-teal-400' },
+  },
+}

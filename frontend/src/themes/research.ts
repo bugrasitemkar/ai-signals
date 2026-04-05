@@ -1,0 +1,41 @@
+export const researchTheme = {
+  name: 'research' as const,
+  colors: {
+    bg: 'bg-slate-950',
+    panel: 'bg-slate-900',
+    card: 'bg-slate-800',
+    cardBorder: 'border-slate-700',
+    accent: 'text-blue-400',
+    text: 'text-slate-200',
+    textMuted: 'text-slate-400',
+    textDim: 'text-slate-500',
+  },
+  copy: {
+    appTitle: 'AI Signals Explorer',
+    appSubtitle: '',
+    appTagline: '',
+    send: 'Send',
+    computing: 'Computing...',
+    expand: 'More detail',
+    learnMore: 'Learn more →',
+    summary: 'Executive Summary',
+    summaryDisclaimer: 'AI-interpreted · verify with your judgement',
+    dashboard: 'Signal Dashboard',
+    bySchool: 'By School',
+    byBehavior: 'By Behavior',
+    user: 'You',
+    model: (name: string) => name.toUpperCase(),
+    queued: 'Queued',
+    verdict: 'Composite Reliability',
+    behindCurtain: 'How we compute this',
+  },
+  schools: {
+    information_theoretic: { name: 'Information-Theoretic', color: 'text-blue-400', border: 'border-blue-400' },
+    layer_wise: { name: 'Layer-Wise', color: 'text-violet-400', border: 'border-violet-400' },
+    geometric: { name: 'Geometric / Manifold', color: 'text-pink-400', border: 'border-pink-400' },
+    behavioral: { name: 'Behavioral / Consistency', color: 'text-orange-400', border: 'border-orange-400' },
+    calibration: { name: 'Calibration / Statistical', color: 'text-teal-400', border: 'border-teal-400' },
+  },
+}
+
+export type Theme = Omit<typeof researchTheme, 'name'> & { name: string }

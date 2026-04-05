@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Build
+dist/
+build/
+*.egg-info/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker volumes
+ollama_data/
+hf_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Superpowers
+.superpowers/
+
+# Claude Code
+.claude/
