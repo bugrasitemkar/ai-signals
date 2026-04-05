@@ -72,7 +72,7 @@ You ask a question. The model responds. Then the app extracts 18 signals from th
 
 ## The 5 Schools of Signals
 
-Research has identified **147+ distinct signals** organized into **7 schools of thought** for reading LLM internal states. This tool implements 18 production-viable signals across 5 of those schools:
+Research has identified many distinct signals** organized into **different schools of thought** for reading LLM internal states. This tool implements 18 production-viable signals across 5 of those schools:
 
 | School | Signals | What It Measures | Source |
 |--------|---------|-----------------|--------|
